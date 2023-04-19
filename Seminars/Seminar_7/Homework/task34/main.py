@@ -10,61 +10,35 @@
 #     **Вывод:** Парам пам-пам  
 
 
-# def inputValue(message):
-#    return input(message).split()
+def inputValue(message):
+   return input(message).split()
 
-value = "тра туу тыы".split()
-print(value)
-print(type(value))
-print(value[0])
-print(type(value[0]))
-
+value = inputValue("Введите стихотворение: ")
 
 vowels = "ауоыиэяюёе"
-print(vowels)
 
 def countVowels(value, vowels):
     list = []
-    сс = 0
-    for i in value:
-        for k in i:
-            for j in vowels:
-                if k in j:
-                    сс += 1
-                    list.append(сс)
+    cc = 0
+    flag = True
 
-    # for i in list:
-    #     if len(i)
+    for i in value:
+        cc = 0
+        for k in i:
+            if k in vowels:
+                cc += 1
+        list.append(cc)
     
-    return list
+    # print(list)
+
+    for i in range(0, len(list)):
+            if list[0] != list[i]:
+                flag = False
+
+    if flag is True: print("Парам пам-пам")
+    else: print("Пам парам")
+        
+    return
 
 print(countVowels(value, vowels))
-
-# def countVowels(vowels):
-#     cc = 0
-#     value = filter()
-#     for i in value:
-#         for j in vowels:
-#             if i in j:
-#                 cc += 1
-#                 print(i, j, cc)
-#     return cc
-
-
-
-
-
-
-# word = "mytestword"
-# cword = len(word)
-# vowels = "aeuioy"
-
-# i = 1
-# cc = 0
-# for w in word:
-#   for c in vowels:
-#     if c in w:
-#       cc += 1
-
-# print(cc)
 
