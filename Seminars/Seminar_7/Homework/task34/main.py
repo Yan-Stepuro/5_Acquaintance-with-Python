@@ -24,12 +24,10 @@ def countVowels(value, vowels):
                 cc += 1
         list.append(cc)
 
-    for i in range(0, len(list)): 
+    for i in range(0, len(list)): # len(list) == list.count(list[0])
             if list[0] != list[i]:
                 flag = False
 
-# len(list) == list.count(list[0])
-        
     return flag
 
 value = inputValue("Введите стихотворение: ")
