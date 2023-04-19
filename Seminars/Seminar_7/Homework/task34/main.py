@@ -13,13 +13,8 @@
 def inputValue(message):
    return input(message).split()
 
-value = inputValue("Введите стихотворение: ")
-
-vowels = "ауоыиэяюёе"
-
 def countVowels(value, vowels):
     list = []
-    cc = 0
     flag = True
 
     for i in value:
@@ -28,17 +23,18 @@ def countVowels(value, vowels):
             if k in vowels:
                 cc += 1
         list.append(cc)
-    
-    # print(list)
 
-    for i in range(0, len(list)):
+    for i in range(0, len(list)): 
             if list[0] != list[i]:
                 flag = False
 
-    if flag is True: print("Парам пам-пам")
-    else: print("Пам парам")
+# len(list) == list.count(list[0])
         
-    return
+    return flag
 
-print(countVowels(value, vowels))
+value = inputValue("Введите стихотворение: ")
+vowels = "ауоыиэяюёе"
+
+if countVowels(value, vowels): print("Парам пам-пам")
+else: print("Пам парам")
 
