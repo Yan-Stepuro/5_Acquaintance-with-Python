@@ -1,0 +1,9 @@
+id,lastname,firstname,secondname,phone
+1,Ivanov,Ivan,Ivanovich,71234567890
+4,Petrov,Petr,Petrovich,71239999999
+5,Sidorov,Sidor,Sidorovich,79651234567
+6,Andreev,Andrey,Andreevich,79652223344
+7,Alexeev,Alexey,Alexeevich,78593658899
+8,Asafiev,Stas,Igorevich,79654449955
+9,Maksimov,Maksim,Maksimovich,79652267788
+10,Stepuro,Yan,Richrdovich,79652595183
