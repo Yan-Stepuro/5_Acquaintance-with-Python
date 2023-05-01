@@ -10,9 +10,11 @@ lst += ['human'] * 10
 random.shuffle(lst)
 data = pd.DataFrame({'whoAmI': lst})
 
-print(data.head())
-print(data)
-print(lst)
+
+data_onehot = pd.DataFrame({'human': [True if i == 'human' else False for i in lst],
+                            'robot': [True if j == 'robot' else False for j in lst]})
 print(pd.get_dummies(lst))
+print(data_onehot)
+
 
 
